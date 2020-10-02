@@ -101,16 +101,43 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
 }
 #app .row div:nth-child(2) {
-    background: url("../images/app2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to bottom, lightblue, blue);
+    height: 600px;
+    overflow: hidden;
+}
+#app .row div:nth-child(2) img {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    height: 500px;
 }
 #app .row div:last-child {
+    text-align: center;
     background: url("../images/app3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
+}
+
+#social {
+    background: url("../images/social.jpg");
+    /* height: 300px; */
+}
+
+#social .row {
+    position: relative;
+    height: 300px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
 }
