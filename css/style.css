@@ -35,12 +35,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*
-#jumbo [class*="col-"] {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-} */
 
 .centra-head-foot {
     padding: 0 10%;
@@ -57,18 +51,66 @@
 }
 
 .product-show {
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    background-position: bottom;
+    background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
     min-height: 400px;
 }
 
-#product1 {
-    background: url("../images/product1.jpg");
-
+.product-show img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
 }
 
-#product2 {
-    background: url("../images/product2.jpg");
+/* #how {
+    background: url("../images/anziano.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+#how .row {
+    position: relative;
+}
+#how .row div:nth-of-type(2) {
+    text-align: center;
+    margin-top: 20vh;
+}
+#how .row div:last-of-type, #how .row div:first-of-type {
+    margin-top: 50vh;
+}
+#how .row div img {
+    height: 60vh;
+}
+#semi-background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 50vh;
+    width: 100%;
+}
+
+#app .row div:first-child {
+    background: url("../images/app1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app .row div:nth-child(2) {
+    background: url("../images/app2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app .row div:last-child {
+    background: url("../images/app3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
