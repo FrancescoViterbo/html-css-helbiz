@@ -26,14 +26,20 @@ nav {
 nav [class*="col-"] {
     position: relative;
 }
+#logo {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #nav-large {
     display: inline-block;
 
 }
 #nav-mobile {
     display: inline-block;
+    /* text-align: right; */
 }
-#logo {
+#nav-mobile img {
+    height: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -273,6 +279,9 @@ footer {
     /* Products */
     #product1 .product-show, #product2 .product-show {
         height: 550px;
+    }
+    #nav-mobile {
+        display: none;
     }
 }
 
