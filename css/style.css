@@ -17,24 +17,21 @@ body {
 
 nav {
     background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 }
 nav [class*="col-"] {
     position: relative;
 }
 #nav-large {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
+    display: inline-block;
+
 }
 #nav-mobile {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 3;
-    display: none;
+    display: inline-block;
 }
 #logo {
     left: 50%;
@@ -75,7 +72,20 @@ li a {
 }
 #jumbo h2 {
     font-weight: bold;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+#jumbo p {
+    margin-bottom: 1.5rem;
+}
+#jumbo img {
+    margin: 1rem;
+    max-height: 60px;
+}
+#jumbo .centra-verticale div:first-of-type {
+    text-align: right;
+}
+#jumbo .centra-verticale div:last-of-type {
+    text-align: left;
 }
 
 /* MAIN */
@@ -94,6 +104,13 @@ li a {
     transform: translate(0, -50%);
 }
 
+
+#app, #how, #prodotti {
+    margin-top: 5rem;
+}
+#social {
+    margin: 2rem auto;
+}
 
 /* PRODOTTI */
 
@@ -127,7 +144,7 @@ li a {
 #prodotti {
     font-size: 24px;
 }
-#prodotti h2, p {
+#prodotti h2, #prodotti p {
     padding-top: 2rem;
 }
 #prodotti p {
@@ -139,7 +156,7 @@ li a {
 
 /* HOW SECTION */
 
-#how h2, h3, p {
+#how h2, #how h3, #how p {
     padding-top: 2rem;
 }
 
@@ -152,7 +169,7 @@ li a {
     overflow: visible;
 }
 #how .row div img {
-    height: 60vh;
+    height: 450px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -193,28 +210,27 @@ li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     text-align: center;
 }
 #get {
     text-align: center;
     position: relative;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
 }
 #get img {
     left: 50%;
-    top: 50%;
+    bottom: 0;
     transform: translate(-50%, 0);
     position: absolute;
-    height: 500px;
 }
 #find {
     text-align: center;
-    height: 600px;
+    height: 700px;
 }
 #get div {
-    background: linear-gradient(to bottom, lightblue, blue);
+    background: linear-gradient(to bottom, #7588c7, #232a40);
     height: 100%;
     margin-right: 1rem;
 }
@@ -226,6 +242,7 @@ li a {
     height: 100%;
     margin-left: 1rem;
 }
+
 
 /* SOCIAL SECTION */
 
@@ -257,29 +274,69 @@ footer {
     #product1 .product-show, #product2 .product-show {
         height: 550px;
     }
-    #smart {
-        height: 500px;
-    }
 }
 
  /* TABLET */
 @media all and (min-width: 769px) and (max-width: 992px) {
+    #nav-large {
+        display: none;
+    }
     /* Products */
     #product1 .product-show, #product2 .product-show {
-        height: 550px;
+        height: 700px;
     }
-    #smart {
-        height: 500px;
+    #how img {
+        display: none;
+    }
+    #how .row div:nth-of-type(2) {
+        text-align: center;
+    }
+    #how .row div:last-of-type {
+        text-align: center;
+    }
+    #get div {
+        margin-right: 0;
+    }
+    #find div {
+        margin-left: 0;
     }
 }
 
  /* MOBILE */
-@media all and (min-width: 769px) {
+@media all and (max-width: 769px) {
+    #nav-large {
+        display: none;
+    }
+    #jumbo img {
+        margin: none;
+        max-height: 40px;
+    }
     /* Products */
+    .product-show img {
+        height: 150px;
+    }
     #product1 {
-
+        padding-left: 1rem;
     }
     #product2 {
-
+        padding-right: 1rem;
+    }
+    #how img {
+        display: none;
+    }
+    #how .row div:nth-of-type(2) {
+        text-align: center;
+    }
+    #how .row div:last-of-type {
+        text-align: center;
+    }
+    #get div {
+        margin-left: 1rem;
+    }
+    #get img {
+        max-width: 280px;
+    }
+    #find div {
+        margin-right: 1rem;
     }
 }
