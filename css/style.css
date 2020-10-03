@@ -72,6 +72,8 @@
 }
 #how .row div {
     position: relative;
+    height: 200px;
+    overflow: visible;
 }
 #how .row div img {
     height: 60vh;
@@ -80,13 +82,12 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
-#how .row div {
-    height: 200px;
-    overflow: visible;
-}
-#semi-background {
+#how .row div:first-of-type {
     background: url("../images/anziano.jpg");
-    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
 
 #app .row div:first-child {
