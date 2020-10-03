@@ -10,7 +10,7 @@ body {
 
 [class*="col-"] {
     min-height: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* NAVBAR */
@@ -58,6 +58,8 @@ li a {
     color: black;
 }
 
+/* Jumbo */
+
 #jumbo {
     position: relative;
     min-height: 500px;
@@ -76,6 +78,8 @@ li a {
     margin-bottom: 4rem;
 }
 
+/* MAIN */
+
 .centra-head-foot {
     padding: 0 10%;
 }
@@ -90,6 +94,9 @@ li a {
     transform: translate(0, -50%);
 }
 
+
+/* PRODOTTI */
+
 .product-show {
     position: relative;
     background-position: bottom;
@@ -99,7 +106,6 @@ li a {
     min-height: 400px;
     background: #efefef;
 }
-
 .product-show img {
     position: absolute;
     left: 50%;
@@ -116,6 +122,25 @@ li a {
 }
 #product2 {
     padding-left: 1rem;
+}
+
+#prodotti {
+    font-size: 24px;
+}
+#prodotti h2, p {
+    padding-top: 2rem;
+}
+#prodotti p {
+    padding-bottom: 2rem;
+}
+#prodotti a {
+    text-decoration: none;
+}
+
+/* HOW SECTION */
+
+#how h2, h3, p {
+    padding-top: 2rem;
 }
 
 #how .row {
@@ -141,6 +166,24 @@ li a {
     height: 400px;
 }
 
+/* APP SECTION */
+#app {
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 0 4px black;
+}
+#get h2, #find h2 {
+    padding-top: 5rem;
+}
+#app p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#app a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
 #smart, #get, #find {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -156,21 +199,18 @@ li a {
 #get {
     text-align: center;
     position: relative;
-
     height: 600px;
     overflow: hidden;
 }
 #get img {
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, 0);
     position: absolute;
     height: 500px;
 }
 #find {
     text-align: center;
-
-
     height: 600px;
 }
 #get div {
@@ -187,9 +227,10 @@ li a {
     margin-left: 1rem;
 }
 
+/* SOCIAL SECTION */
+
 #social {
     background: url("../images/social.jpg");
-    /* height: 300px; */
 }
 
 #social .row {
@@ -198,7 +239,47 @@ li a {
     text-align: center;
 }
 
+#social .centra-verticale {
+    background: white;
+}
+
 footer {
     background-color: black;
     color: white;
+}
+
+
+/* Media Queries */
+
+/* DESKTOP */
+@media screen and (min-width: 993px) {
+    /* Products */
+    #product1 .product-show, #product2 .product-show {
+        height: 550px;
+    }
+    #smart {
+        height: 500px;
+    }
+}
+
+ /* TABLET */
+@media all and (min-width: 769px) and (max-width: 992px) {
+    /* Products */
+    #product1 .product-show, #product2 .product-show {
+        height: 550px;
+    }
+    #smart {
+        height: 500px;
+    }
+}
+
+ /* MOBILE */
+@media all and (min-width: 769px) {
+    /* Products */
+    #product1 {
+
+    }
+    #product2 {
+
+    }
 }
