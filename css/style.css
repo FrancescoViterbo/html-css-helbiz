@@ -67,33 +67,26 @@
     height: 300px;
 }
 
-/* #how {
-    background: url("../images/anziano.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 #how .row {
+    overflow: hidden;
+}
+#how .row div {
     position: relative;
-}
-#how .row div:nth-of-type(2) {
-    text-align: center;
-    margin-top: 20vh;
-}
-#how .row div:last-of-type, #how .row div:first-of-type {
-    margin-top: 50vh;
 }
 #how .row div img {
     height: 60vh;
-}
-#semi-background {
-    z-index: -1;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+}
+#how .row div {
+    height: 200px;
+    overflow: visible;
+}
+#semi-background {
+    background: url("../images/anziano.jpg");
     height: 50vh;
-    width: 100%;
 }
 
 #app .row div:first-child {
