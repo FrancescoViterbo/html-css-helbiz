@@ -68,7 +68,7 @@ li a {
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    font-size: 26px;
+    font-size: 30px;
     text-shadow: 0 0 4px black;
 }
 #jumbo h2 {
@@ -137,6 +137,7 @@ li a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    text-align: center;
 }
 #app .row div:nth-child(2) {
     text-align: center;
