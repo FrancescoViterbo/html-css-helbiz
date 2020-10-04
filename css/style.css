@@ -52,7 +52,7 @@ nav li {
     font-size: 12px;
     display: inline-block;
 }
-nav ul li:last-of-type, ul li:nth-of-type(9) {
+nav ul li:last-of-type, nav ul li:nth-of-type(9) {
     border-left: 1px solid black;
 }
 nav li a {
@@ -365,32 +365,32 @@ footer .row:nth-of-type(2) div:first-of-type img {
     #nav-large {
         display: none;
     }
-    #nav-large {
-        background: white;
-        position: absolute;
-        top: 20px;
-        left: 0;
-        transform: translate(0, -50%);
-    }
-    #nav-mobile:hover #nav-large {
-        display: block;    
-    }
-    nav ul {
+    header ul {
+        display: none;
         list-style: none;
         width: 100%;
         text-align: center;
+        background: white;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: calc(100vh - 100px);
+        transform: translate(0, -50%);
+        z-index: 12;
     }
-    nav li {
-        padding: 0 3px;
-        font-size: 12px;
-        display: block;
+    header li {
+        padding: 2.5vh;
+        font-size: 20px;
     }
-    nav ul li:last-of-type, ul li:nth-of-type(9) {
-        border-left: 1px solid black;
+    header ul li:last-of-type, header ul li:nth-of-type(9) {
+        border-left: 0;
     }
-    nav li a {
+    header li a {
         text-decoration: none;
         color: black;
+    }
+    #burger:hover header ul {
+        display: block;
     }
 
     /* Products */
@@ -421,6 +421,33 @@ footer .row:nth-of-type(2) div:first-of-type img {
 @media all and (max-width: 769px) {
     #nav-large {
         display: none;
+    }
+    header ul {
+        display: none;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        background: white;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: calc(100vh - 100px);
+        transform: translate(0, -50%);
+        z-index: 12;
+    }
+    header li {
+        padding: 2.5vh;
+        font-size: 20px;
+    }
+    header ul li:last-of-type, header ul li:nth-of-type(9) {
+        border-left: 0;
+    }
+    header li a {
+        text-decoration: none;
+        color: black;
+    }
+    #burger:hover header ul {
+        display: block;
     }
     #jumbo img {
         margin: none;
